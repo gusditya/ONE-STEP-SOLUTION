@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.subtitle {
+    color: black;
+    padding: 10px 20px;
+    margin: 0;
+    width: 250px;
+    background-color: rgb(237, 237, 237);
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle h3 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.subtitle-1 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
