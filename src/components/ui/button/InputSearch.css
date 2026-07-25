@@ -1,154 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
 .Bottom-navbar {
-    border: 1px solid rgba(0, 0, 0, 0.184);
-    transform: translateY(-50px);
-    width: 80%;
+    box-shadow: 2px 0px 8px 0px #3974f448;
+    transform: translateY(-130px);
+
+    width: 90%;
+    height: 150px;
+
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+
     margin: 0 auto;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 15px;
-    gap: 10px;
-
+    z-index: 3;
 }
 
-.Button-Nav {
+.Icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #EEF4FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.NavbarCard {
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    border-right: 5px solid rgb(240, 240, 240);
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
 }
 
-.Button-Nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    border-radius: 50px;
-    gap:20px;
+.NavbarCard:not(:last-child)::after {
+    content: "";
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    margin: 0 30px;
+
+    transform: translateY(-50%);
+
+    width: 3px;
+    height: 60px;
+    border-radius: 20px;
+
+    background: #8eb2ff6b;
 }
 
-.Button-Nav a {
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.list1{
-    background-color: rgb(240, 240, 240);
-    padding: 10px 20px;
-    border-radius: 40px;
-    cursor: pointer;
-}
-
-.list2, .list3 {
-    padding: 10px 20px;
-    border-radius: 40px;
-}
-
-.list1:hover {
-    background-color: rgb(225, 225, 225);
-}
-
-.list2:hover, .list3:hover {
-    background-color: rgb(225,225,225);
-}
-
-.list1 a{
-    color: black;
-    font-weight: 500;
-}
-
-.list2 a, .list3 a{
-    color: rgb(84, 84, 84);
-}
-
-.InputDropDown {
+.NavbarText {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
     gap: 5px;
 }
 
-.InputDropDown label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: rgb(129, 129, 129);
-    padding-left: 5px;
+.NavbarText h2 {
+    font-family: "Inter", sans-serif;
+    color: #2563EB;
+
 }
 
-.InputDropDown select {
-    border: none;
-    font-size: 17px;
+.NavbarText h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+}
+
+.NavbarText h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
     font-weight: 500;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.InputDropDown select:hover {
-    background-color: rgb(240, 239, 239);
-    border-radius: 5px;
-}
-
-.InputDropDown select:focus {
-    border-color: #6A90BA;
-    box-shadow: 0 0 12px rgba(106,144,186,.3);
-}
-
-.Input {
-    flex: none;
-    width: 500px;
-    position: relative;
-}
-
-.box-input {
-    width: 100%;
-    max-width: 550px;
-    padding: 20px 16px 20px 45px;
-    font-size: 16px;
-    border: 1px solid #d9d9d9;
-    border-radius: 30px;
-    outline: none;
-    transition: 0.3s;
-    background: #fff;
-    color: #222;
-    box-sizing: border-box;
-}
-
-.box-input::placeholder {
-    color: #999;
-}
-
-.box-input:focus {
-    border-color: #000;
-    box-shadow: 0 0 0 4px rgba(0,0,0,0.08);
-}
-
-.search-icon{
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: gray;
-}
-
-.Button-search {
-    padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: black;
-    border-radius: 50px;
-    cursor: pointer;
-}
-
-.Button-search h4 {
-    font-weight: 500;
-}
-
-.Button-search:hover {
-    background-color: rgb(33, 33, 33);
+    width: 150px;
+    line-height: 1.5;
 }

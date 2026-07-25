@@ -15,7 +15,7 @@
     padding: 20px;
     border-radius: 10px;
 
-    width: 250px;
+    width: 260px;
     height: 160px;
 
     display: flex;
@@ -45,7 +45,7 @@
 }
 
 .Card1 img {
-    width: 150px;
+    width: 170px;
     height: auto;
     object-fit: cover;
     transform: translateX(-10px);
@@ -65,7 +65,7 @@
     padding: 20px;
     border-radius: 10px;
 
-    width: 250px;
+    width: 260px;
     height: 80px;
 
     display: flex;
@@ -83,6 +83,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
 }
 
 .Card2-text {

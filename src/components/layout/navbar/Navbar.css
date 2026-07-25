@@ -62,6 +62,31 @@
     border-radius: 50px;
 }
 
+.Nav1 li {
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.Nav1 li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color .3s ease;
+}
+
+/* Hover */
+.Nav1 li:hover {
+    background-color: #EEF4FF;
+    transform: translateY(-2px);
+}
+
+.Nav1 li:hover a {
+    color: #2563EB;
+}
+
 .Nav2 {
     display: flex;
     align-items: center;
@@ -78,7 +103,7 @@
 .Nav2:hover {
     background: #1D4ED8;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37,99,235,.25);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, .25);
 }
 
 .calendar-icon {
@@ -107,7 +132,8 @@
 .a3,
 .a4,
 .a5 {
-    color: rgb(106, 106, 106);
+    color: rgb(62, 62, 62);
+    font-weight: 600;
 }
 
 .Navbar a {
@@ -119,7 +145,7 @@
     color: black;
 }
 
-.a_start{
+.a_start {
     display: inline-block;
     color: white;
     margin: 0;
