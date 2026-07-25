@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+.title-Card {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.Card1 {
+    background-color: white;
+    box-shadow: 2px 0px 8px 0px #3974f448;
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 250px;
+    height: 160px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.Card1 h2,
+.Card2 h2,
+.Card3 h2,
+.Card4 h2 {
+    font-family: "Inter", sans-serif;
+    color: #2563EB;
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.Card1 h3,
+.Card2 h3,
+.Card3 h3,
+.Card4 h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(5, 0, 96);
+}
+
+.Card1 img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    transform: translateX(-10px);
+}
+
+.SubCard {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Card2,
+.Card3,
+.Card4 {
+    background-color: white;
+    box-shadow: 2px 0px 8px 0px #3974f448;
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 250px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #EEF4FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card2-text {
+    display: flex;
+    flex-direction: column;
+}
