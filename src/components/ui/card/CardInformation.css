@@ -21,6 +21,8 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
+
+    transition: .3s ease;
 }
 
 .Card1 h2,
@@ -66,12 +68,14 @@
     border-radius: 10px;
 
     width: 260px;
-    height: 80px;
+    height: 90px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+
+    transition: .3s ease;
 }
 
 .icon-box {
@@ -90,4 +94,15 @@
 .Card2-text {
     display: flex;
     flex-direction: column;
+}
+
+.Card1:hover,
+.Card2:hover,
+.Card3:hover,
+.Card4:hover {
+    transform: translate(-10px, -10px);
+    box-shadow:
+    2px 2px 0px 0.8px #2563EB, 4px 4px 0px white,
+    6px 6px 0px #2563EB, 8px 8px 0px white,
+    10px 10px 0px #2563EB, 12px 12px 0px white;
 }

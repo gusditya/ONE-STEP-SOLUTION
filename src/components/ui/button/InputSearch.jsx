@@ -13,8 +13,8 @@ export default function InputSearch() {
                 </div>
 
                 <div className="NavbarText">
-                    <h2>37.000+</h2>
-                    <h3>Alumni Sukses</h3>
+                    <h2 className="font-bold text-2xl">37.000+</h2>
+                    <h3 className="font-bold">Alumni Sukses</h3>
                     <h4>Telah berangkat ke luar negeri</h4>
                 </div>
             </div>
@@ -25,8 +25,8 @@ export default function InputSearch() {
                 </div>
 
                 <div className="NavbarText">
-                    <h2>300+</h2>
-                    <h3>Universitas Partner</h3>
+                    <h2 className="font-bold text-2xl">300+</h2>
+                    <h3 className="font-bold">Universitas Partner</h3>
                     <h4>Bekerja sama dengan Universitas terbaik</h4>
                 </div>
             </div>
@@ -37,8 +37,8 @@ export default function InputSearch() {
                 </div>
 
                 <div className="NavbarText">
-                    <h2>15+</h2>
-                    <h3>Negara Tujuan</h3>
+                    <h2 className="font-bold text-2xl">15+</h2>
+                    <h3 className="font-bold">Negara Tujuan</h3>
                     <h4>Pilihan negara favorit untuk masa depanmu</h4>
                 </div>
             </div>
@@ -49,8 +49,8 @@ export default function InputSearch() {
                 </div>
 
                 <div className="NavbarText">
-                    <h2>98%</h2>
-                    <h3>Visa Success Rate</h3>
+                    <h2 className="font-bold text-2xl">98%</h2>
+                    <h3 className="font-bold">Visa Success Rate</h3>
                     <h4>Tingkat keberhasilan visa yang tinggi</h4>
                 </div>
             </div>

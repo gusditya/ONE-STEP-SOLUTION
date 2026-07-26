@@ -9,6 +9,10 @@ import Image from "./assets/download.jpg";
 import Title from "./pages/home/title.jsx";
 import InputSearch from "./components/ui/button/InputSearch.jsx";
 import CardInformation from "./components/ui/card/CardInformation.jsx";
+import Tatacara from "./pages/home/Tatacara.jsx";
+import CardCountry from "./components/ui/card/CardCountry.jsx";
+import Video from "./components/ui/video/video.jsx";
+import Layanankami from "./components/ui/card/Layanankami.jsx";
 
 createRoot(document.getElementById("root"))
     .render(
@@ -36,6 +40,17 @@ createRoot(document.getElementById("root"))
                     </div>
 
                     <InputSearch />
+                </div>
+
+                <Tatacara />
+
+                <div className="flex flex-col gap-10">
+                    <CardCountry />
+                    <Video />
+                </div>
+
+                <div className="bg-gray-50">
+                    <Layanankami />
                 </div>
 
                 {/* <Card/> */}

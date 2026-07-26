@@ -8,7 +8,7 @@ export default function CardInformation() {
     return (
         <div className="title-Card">
             <div className="Card1">
-                <h2>37.000+</h2>
+                <h2 className="font-bold">37.000+</h2>
                 <div className="SubCard">
                     <h3>Alumni Sukses</h3>
                     <img src={Avatar} alt="Avatar" />
@@ -21,7 +21,7 @@ export default function CardInformation() {
                     <Landmark size={32} color="#2563EB " />
                 </div>
                 <div className="Card-text">
-                    <h2>300+</h2>
+                    <h2 className="font-bold">300+</h2>
                     <h3>Universitas Partner</h3>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function CardInformation() {
                     <Globe size={32} color="#2563EB" />
                 </div>
                 <div className="Card-text">
-                    <h2>15+</h2>
+                    <h2 className="font-bold">15+</h2>
                     <h3>Negara Tujuan</h3>
                 </div>
             </div>
@@ -41,7 +41,7 @@ export default function CardInformation() {
                     <ShieldCheck size={32} color="#2563EB" />
                 </div>
                 <div className="Card-text">
-                    <h2>98%</h2>
+                    <h2 className="font-bold">98%</h2>
                     <h3>Visa Success Rate</h3>
                 </div>
             </div>
