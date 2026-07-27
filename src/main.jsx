@@ -13,6 +13,7 @@ import Tatacara from "./pages/home/Tatacara.jsx";
 import CardCountry from "./components/ui/card/CardCountry.jsx";
 import Video from "./components/ui/video/video.jsx";
 import Layanankami from "./components/ui/card/Layanankami.jsx";
+import Card from "./components/ui/card/Card.jsx";
 
 createRoot(document.getElementById("root"))
     .render(
@@ -51,9 +52,9 @@ createRoot(document.getElementById("root"))
 
                 <div className="bg-gray-50">
                     <Layanankami />
+                    <Card />
                 </div>
 
-                {/* <Card/> */}
                 <Footer />
             </div>
         </StrictMode>

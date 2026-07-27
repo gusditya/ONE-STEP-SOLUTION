@@ -11,9 +11,38 @@
 }
 
 .Card1-layanankami {
-    width: 250px;
-    height: 200px;
+    width: 260px;
+    height: 240px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0px 10px rgba(37, 99, 235, .25);
+    box-shadow: 0 0px 10px rgba(37, 100, 235, 0.13);
+
+    padding: 20px;
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.IconBox {
+    background-color: #d0dfff4d;
+    width: 70px;
+    height: 70px;
+    color: #2563EB;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Box-text h4 {
+    font-size: 15px;
 }

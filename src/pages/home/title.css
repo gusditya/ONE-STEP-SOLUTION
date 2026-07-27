@@ -25,11 +25,17 @@
 
 .title {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 1;
+    padding-bottom: 10px;
 }
 
 .title h1 {
     font-size: 60px;
     font-weight: 600;
+    margin: 0;
 }
 
 .text1 {

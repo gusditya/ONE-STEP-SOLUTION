@@ -6,13 +6,16 @@
     align-items: center;
     width: 100%;
     transform: translateY(-80px);
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .Title-Tatacara {
     font-family: "Poppins", sans-serif;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 
 .Title-span2 {

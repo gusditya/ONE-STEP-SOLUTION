@@ -7,26 +7,32 @@
 
 html,
 body {
-    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 #root {
     min-height: 100vh;
+    width: 100%;
     display: flex;
-    overflow-x: hidden;
+    min-width: 0;
+    overflow-x: clip;
 }
 
 .app {
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: 0;
+    overflow-x: clip;
 }
 
 .container {
     flex: 1;
+    min-width: 0;
+    overflow-x: clip;
 }
 
 footer {
@@ -36,28 +42,28 @@ footer {
     padding: 20px;
 }
 
-.hero{
+.hero {
     position: relative;
 
-    width:100%;
-    min-height:700px;
+    width: 100%;
+    min-height: 700px;
 
-    background-position:center;
-    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
 
-    padding:0 80px;
-    box-sizing:border-box;
+    padding: 0 80px;
+    box-sizing: border-box;
 }
 
 .hero-left {
     display: flex;
+    justify-content: space-between;
     flex: 1;
     position: relative;
-    z-index: 3;
     margin-top: 100px;
 }
 
@@ -68,15 +74,17 @@ footer {
     object-fit: cover;
     transform: scale(1.5);
     z-index: -1;
+    margin-right: 150px;
 }
 
 .hero-right {
     flex: 1;
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 40px;
     z-index: 3;
-    transform: translateX(-50px);
+    transform: translateX(-20px);
 }
 
 .ContainerTitle {
@@ -197,13 +205,15 @@ footer {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
-  html {
-    @apply font-sans;
+
+    html {
+        @apply font-sans;
     }
 }
