@@ -14,6 +14,8 @@ import CardCountry from "./components/ui/card/CardCountry.jsx";
 import Video from "./components/ui/video/video.jsx";
 import Layanankami from "./components/ui/card/Layanankami.jsx";
 import Card from "./components/ui/card/Card.jsx";
+import Question from "./components/ui/question/question.jsx"
+import CardPeople from "./components/ui/card/CardPeople.jsx";
 
 createRoot(document.getElementById("root"))
     .render(
@@ -27,16 +29,6 @@ createRoot(document.getElementById("root"))
                             <img src={Image} alt="Hero" width={200} height={200} className="hero-image" />
                         </div>
 
-                        {/* <div className="hero-right">
-                            <Lanyard
-                                position={[0, 0, 20]}
-                                gravity={[0, -40, 0]}
-                                frontImage={frontImage}
-                                backImage={frontImage}
-                                lanyardWidth={2}
-                                imagefit="cover"
-                            />
-                        </div> */}
                         <CardInformation />
                     </div>
 
@@ -53,7 +45,9 @@ createRoot(document.getElementById("root"))
                 <div className="bg-gray-50">
                     <Layanankami />
                     <Card />
+                    <Question />
                 </div>
+                    <CardPeople />
 
                 <Footer />
             </div>

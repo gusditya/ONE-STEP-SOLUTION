@@ -1,110 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
-
-.title-Card {
+.CardInformation {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    gap: 20px;
-    z-index: 1;
 }
 
-.Card1 {
+.Canada {
+    top: 30px;
+    left: -250px;
+
+    position: absolute;
     background-color: white;
-    box-shadow: 2px 0px 8px 0px #3974f448;
-    padding: 20px;
+    width: 200px;
+    height: 80px;
+    box-shadow: 2px 0px 13px 2px rgba(0, 0, 0, 0.13);
     border-radius: 10px;
 
-    width: 260px;
-    height: 160px;
-
     display: flex;
-    flex-direction: column;
-    gap: 3px;
+    align-items: center;
+    gap: 10px;
 
     transition: .3s ease;
 }
 
-.Card1 h2,
-.Card2 h2,
-.Card3 h2,
-.Card4 h2 {
-    font-family: "Inter", sans-serif;
-    color: #2563EB;
-    font-size: 26px;
-    padding: 0;
-    margin: 0;
-}
+.United-Kingdom {
+    top: 150px;
+    right: 630px;
 
-.Card1 h3,
-.Card2 h3,
-.Card3 h3,
-.Card4 h3 {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(5, 0, 96);
-}
-
-.Card1 img {
-    width: 170px;
-    height: auto;
-    object-fit: cover;
-    transform: translateX(-10px);
-}
-
-.SubCard {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.Card2,
-.Card3,
-.Card4 {
+    position: absolute;
     background-color: white;
-    box-shadow: 2px 0px 8px 0px #3974f448;
-    padding: 20px;
+    width: 200px;
+    height: 80px;
+    box-shadow: 2px 0px 13px 2px rgba(0, 0, 0, 0.13);
     border-radius: 10px;
 
-    width: 260px;
-    height: 90px;
-
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     transition: .3s ease;
 }
 
-.icon-box {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background: #EEF4FF;
+.Australia {
+    top: 460px;
+    right: 550px;
+
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    box-shadow: 2px 0px 13px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
 
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+    transition: .3s ease;
 }
 
-.Card2-text {
+.Singapore {
+    top: 360px;
+    right: -40px;
+
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    box-shadow: 2px 0px 13px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    transition: .3s ease;
 }
 
-.Card1:hover,
-.Card2:hover,
-.Card3:hover,
-.Card4:hover {
+.Canada:hover,
+.Singapore:hover {
     transform: translate(-10px, -10px);
     box-shadow:
-    2px 2px 0px 0.8px #2563EB, 4px 4px 0px white,
-    6px 6px 0px #2563EB, 8px 8px 0px white,
-    10px 10px 0px #2563EB, 12px 12px 0px white;
+    2px 2px 0px 0.8px red, 4px 4px 0px white,
+    6px 6px 0px red, 8px 8px 0px white,
+    10px 10px 0px red, 12px 12px 0px white;
+}
+
+.Australia:hover,
+.United-Kingdom:hover {
+    transform: translate(-10px, -10px);
+    box-shadow:
+    2px 2px 0px 0.8px #0b3590, 4px 4px 0px white,
+    6px 6px 0px #0b3590, 8px 8px 0px white,
+    10px 10px 0px #0b3590, 12px 12px 0px white;
+}
+
+.TextCountry {
+    display: flex;
+    flex-direction: column;
+}
+
+.TextCountry h4,
+.TextCountry h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.country {
+    width: 60px;
+    height: 45px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }

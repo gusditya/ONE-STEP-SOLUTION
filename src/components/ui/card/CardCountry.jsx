@@ -42,7 +42,7 @@ export default function CardCountry() {
                                 </div>
                             </div>
 
-                            <div className="arrow">
+                            <div className="arrow-country">
                                 <ArrowRight size={24} className="Icon-next" />
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function CardCountry() {
                                 </div>
                             </div>
 
-                            <div className="arrow">
+                            <div className="arrow-country">
                                 <ArrowRight size={24} className="Icon-next" />
                             </div>
                         </div>
@@ -114,7 +114,7 @@ export default function CardCountry() {
                                 </div>
                             </div>
 
-                            <div className="arrow">
+                            <div className="arrow-country">
                                 <ArrowRight size={24} className="Icon-next" />
                             </div>
                         </div>
@@ -150,7 +150,7 @@ export default function CardCountry() {
                                 </div>
                             </div>
 
-                            <div className="arrow">
+                            <div className="arrow-country">
                                 <ArrowRight size={24} className="Icon-next" />
                             </div>
                         </div>
@@ -186,7 +186,7 @@ export default function CardCountry() {
                                 </div>
                             </div>
 
-                            <div className="arrow">
+                            <div className="arrow-country">
                                 <ArrowRight size={24} className="Icon-next" />
                             </div>
                         </div>

@@ -1,52 +1,55 @@
 import "./CardInformation.css";
-import Avatar from "../../../assets/Logo-Avatar.jpg";
-import { Landmark } from "lucide-react";
-import { Globe } from "lucide-react";
-import { ShieldCheck } from "lucide-react";
+import Canada from "../../../assets/country/canadaflag.png";
+import UK from "../../../assets/country/UKflag.png";
+import Australia from "../../../assets/country/australiaflag.png";
+import Singapore from "../../../assets/country/singaporeflag.png";
 
 export default function CardInformation() {
     return (
-        <div className="title-Card">
-            <div className="Card1">
-                <h2 className="font-bold">37.000+</h2>
-                <div className="SubCard">
-                    <h3>Alumni Sukses</h3>
-                    <img src={Avatar} alt="Avatar" />
-                    <h3>Trust by Thousands</h3>
+        <div className="CardInformation">
+            <div className="Canada">
+                <div className="countryflag">
+                    <img src={Canada} className="country" />
+                </div>
+
+                <div className="TextCountry">
+                    <h4 className="font-bold text-lg">Canada</h4>
+                    <h5>Toronto</h5>
                 </div>
             </div>
 
-            <div className="Card2">
-                <div className="icon-box">
-                    <Landmark size={32} color="#2563EB " />
+            <div className="United-Kingdom">
+                <div className="countryflag">
+                    <img src={UK} className="country" />
                 </div>
-                <div className="Card-text">
-                    <h2 className="font-bold">300+</h2>
-                    <h3>Universitas Partner</h3>
+
+                <div className="TextCountry">
+                    <h4 className="font-bold text-lg">UK</h4>
+                    <h5>London</h5>
                 </div>
             </div>
 
-            <div className="Card3">
-                <div className="icon-box">
-                    <Globe size={32} color="#2563EB" />
+            <div className="Australia">
+                <div className="countryflag">
+                    <img src={Australia} className="country" />
                 </div>
-                <div className="Card-text">
-                    <h2 className="font-bold">15+</h2>
-                    <h3>Negara Tujuan</h3>
+
+                <div className="TextCountry">
+                    <h4 className="font-bold text-lg">Australia</h4>
+                    <h5>Sydney</h5>
                 </div>
             </div>
 
-            <div className="Card4">
-                <div className="icon-box">
-                    <ShieldCheck size={32} color="#2563EB" />
+            <div className="Singapore">
+                <div className="countryflag">
+                    <img src={Singapore} className="country" />
                 </div>
-                <div className="Card-text">
-                    <h2 className="font-bold">98%</h2>
-                    <h3>Visa Success Rate</h3>
+
+                <div className="TextCountry">
+                    <h4 className="font-bold text-lg">Singapura</h4>
+                    <h5>Woodland</h5>
                 </div>
             </div>
-
-
         </div>
     )
 }

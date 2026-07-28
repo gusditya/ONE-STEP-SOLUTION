@@ -1,6 +1,104 @@
-footer {
-    background: #222;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.All-footer {
     color: white;
+    background-color: #173e92;
     text-align: center;
     padding: 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.Footer-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+}
+
+.Location p,
+.Telepon p,
+.Mail p {
+    font-size: 14px;
+}
+
+.Location,
+.Telepon,
+.Mail {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Footer-left img {
+    width: 300px;
+    height: auto;
+}
+
+.Footer-right {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 50px;
+}
+
+.Kampus,
+.Layanan,
+.dukungan {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+    text-align: left;
+}
+
+.Kampus h2,
+.Layanan h2,
+.dukungan h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(234, 199, 128);
+}
+
+.Kampus a,
+.Layanan a,
+.dukungan a{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.list-a {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Footer-Bottom {
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-app {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo-app a {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    border-radius: 10px;
 }
