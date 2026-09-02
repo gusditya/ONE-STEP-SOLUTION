@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 .Tatacara {
     display: flex;
@@ -11,14 +12,19 @@
 }
 
 .Title-Tatacara {
-    font-family: "Poppins", sans-serif;
     padding: 20px 0;
-    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 
+.Title-span1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
 .Title-span2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: -20px;
     color: #2563EB;
 }
 

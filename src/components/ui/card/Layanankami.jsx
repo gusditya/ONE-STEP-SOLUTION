@@ -9,8 +9,8 @@ export default function Layanankami() {
     return (
         <div className="Layanankami flex flex-col gap-3">
             <div className="title-layanankami flex flex-col gap-3">
-                <h2 className="font-bold text-3xl">Layanan Kami</h2>
-                <h4>Solusi lengkap untuk mewujudkan impian studimu</h4>
+                <h2 className="text-layanankami font-bold text-3xl">Layanan Kami</h2>
+                <h4 className="text-layanankami">Solusi lengkap untuk mewujudkan impian studimu</h4>
             </div>
 
             <div className="Card-layanankami">

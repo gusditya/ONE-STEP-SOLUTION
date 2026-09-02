@@ -28,6 +28,10 @@
     margin-bottom: 3rem;
 }
 
+.faq-header h2 {
+    font-family: 'Playfair Display', serif;
+}
+
 .faq-badge {
     display: inline-block;
     padding: 0.35rem 1rem;

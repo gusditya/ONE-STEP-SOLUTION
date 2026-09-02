@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
 .video-section{
     max-width:1300px;
     margin:auto;
@@ -17,6 +19,7 @@
 }
 
 .video-header h2{
+    font-family: 'Playfair Display', serif;
     font-size:48px;
     color:#163B7A;
     font-weight: 600;

@@ -8,6 +8,10 @@
     gap: 20px;
 }
 
+.text-alumni {
+    font-family: 'Playfair Display', serif;
+}
+
 .Title-pengalaman {
     display: flex;
     flex-direction: column;

@@ -9,7 +9,7 @@ export default function Tatacara() {
     return (
         <div className="Tatacara">
             <div className="Title-Tatacara">
-                <span className="Title-span1">Perjalanan Anda <span className="Title-span2">Bersama OSS</span></span>
+                <span className="Title-span1">Perjalanan Anda <h3 className="Title-span2">Bersama OSS</h3></span>
             </div>
 
             <div className="Container-Card">

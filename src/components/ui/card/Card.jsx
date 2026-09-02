@@ -12,7 +12,7 @@ export default function Card() {
     return (
         <div className="Card-Pengalaman">
             <div className="Title-pengalaman">
-                <h2 className="font-bold text-3xl">Kisah Sukses Alumni OSS</h2>
+                <h2 className="text-alumni font-bold text-3xl">Kisah Sukses Alumni OSS</h2>
                 <h4>Lihat bagaimana bimbingan OSS membantu para siswa meraih kesempatan belajar di universitas impian mereka.</h4>
             </div>
 

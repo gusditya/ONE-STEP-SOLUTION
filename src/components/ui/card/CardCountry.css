@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
 .CardCountry {
     display: flex;
     flex-direction: column;
     padding: 30px;
     gap: 20px;
+}
+
+.text1-cardcountry {
+    font-family: 'Playfair Display', serif;
 }
 
 .AllCountry {

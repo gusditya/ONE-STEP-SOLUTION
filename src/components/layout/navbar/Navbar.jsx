@@ -10,7 +10,7 @@ export default function Navbar() {
                 <div className="title-navbar">
                     <h2>One Step</h2><h3>Solution Bali</h3>
 
-                </div>  
+                </div>
             </div>
 
             <ul className="Nav1">

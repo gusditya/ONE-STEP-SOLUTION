@@ -31,7 +31,7 @@ export default function Consultant() {
             <div className="section-title">
                 <span className="badge">OUR CONSULTANT</span>
 
-                <h2>Temukan Solusimu Bersama Ahli Kami</h2>
+                <h2 className="text-cardpeople">Temukan Solusimu Bersama Ahli Kami</h2>
 
                 <p>
                     Konsultasikan rencana studi luar negerimu bersama tim profesional
@@ -41,7 +41,7 @@ export default function Consultant() {
 
             <div className="consultant-wrapper">
                 <button className="arrow left" onClick={scrollLeft}>&#10094;</button>
-                
+
                 <div className="consultant-container" ref={sliderRef}>
                     <div className="consultant-card">
                         <img src={Nadya} />

@@ -8,8 +8,8 @@ export default function CardCountry() {
     return (
         <div className="CardCountry">
             <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-3xl">Destinasi Studi Populer</h2>
-                <h4 className="text-lg">Temukan negara terbaik untuk masa depanmu</h4>
+                <h2 className="text1-cardcountry font-bold text-3xl">Destinasi Studi Populer</h2>
+                <h4 className="text1-cardcountry text-lg">Temukan negara terbaik untuk masa depanmu</h4>
             </div>
 
             <div className="AllCountry">
@@ -20,7 +20,7 @@ export default function CardCountry() {
                         </div>
 
                         <div className="subtitle-card">
-                            <div class="Materi">
+                            <div className="Materi">
                                 <h2 className="text-xl font-bold text-white">Australia</h2>
 
                                 <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>
@@ -56,7 +56,7 @@ export default function CardCountry() {
                         </div>
 
                         <div className="subtitle-card">
-                            <div class="Materi">
+                            <div className="Materi">
                                 <h2 className="text-xl font-bold text-white">Canada</h2>
 
                                 <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>
@@ -92,7 +92,7 @@ export default function CardCountry() {
                         </div>
 
                         <div className="subtitle-card">
-                            <div class="Materi">
+                            <div className="Materi">
                                 <h2 className="text-xl font-bold text-white">Jepang</h2>
 
                                 <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>
@@ -128,7 +128,7 @@ export default function CardCountry() {
                         </div>
 
                         <div className="subtitle-card">
-                            <div class="Materi">
+                            <div className="Materi">
                                 <h2 className="text-xl font-bold text-white">United Kingdom</h2>
 
                                 <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>
@@ -164,7 +164,7 @@ export default function CardCountry() {
                         </div>
 
                         <div className="subtitle-card">
-                            <div class="Materi">
+                            <div className="Materi">
                                 <h2 className="text-xl font-bold text-white">New Zealand</h2>
 
                                 <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>

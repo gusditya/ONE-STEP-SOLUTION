@@ -131,6 +131,10 @@
     z-index: 20;
 }
 
+.text-cardpeople {
+    font-family: 'Playfair Display', serif;
+}
+
 .arrow:hover {
     background: #0d67e8;
     color: white;
