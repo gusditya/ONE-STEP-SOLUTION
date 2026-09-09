@@ -48,7 +48,7 @@ function CountryCardItem({ nama, cardClass, list }) {
                         <div style={{ gap: "5px", display: "flex", flexDirection: "column" }}>
                             {list.map((item, index) => (
                                 <div key={index} className="text-card">
-                                    <Check color="#2563EB" size={12} />
+                                    <Check color="#093343" size={12} />
                                     <h4 className="listCountry text-white">{item}</h4>
                                 </div>
                             ))}
@@ -56,7 +56,7 @@ function CountryCardItem({ nama, cardClass, list }) {
                     </div>
 
                     <div className="arrow-country">
-                        <ArrowRight size={24} className="Icon-next" />
+                        <ArrowRight size={20} className="Icon-next" />
                     </div>
                 </div>
             </UICard>

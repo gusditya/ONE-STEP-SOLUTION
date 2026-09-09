@@ -1,12 +1,11 @@
-
-
 .Layanankami {
     padding: 40px;
     padding: 80px;
 }
 
 .text-layanankami {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
+    color: #093343;
 }
 
 .Card-layanankami {
@@ -32,10 +31,10 @@
 }
 
 .IconBox {
-    background-color: #d0dfff4d;
-    width: 70px;
-    height: 70px;
-    color: #2563EB;
+    background-color: #EEEEEE;
+    width: 60px;
+    height: 60px;
+    color: #093343;
 
     display: flex;
     justify-content: center;

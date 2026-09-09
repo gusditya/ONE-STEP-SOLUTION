@@ -9,7 +9,7 @@ export default function InputSearch() {
         <div className="Bottom-navbar">
             <div className="NavbarCard">
                 <div className="Icon-box">
-                    <GraduationCap size={38} color="#093343" />
+                    <GraduationCap size={30} color="#093343" />
                 </div>
 
                 <div className="NavbarText">
@@ -21,7 +21,7 @@ export default function InputSearch() {
 
             <div className="NavbarCard">
                 <div className="Icon-box">
-                    <Landmark size={38} color="#093343" />
+                    <Landmark size={30} color="#093343" />
                 </div>
 
                 <div className="NavbarText">
@@ -33,7 +33,7 @@ export default function InputSearch() {
 
             <div className="NavbarCard">
                 <div className="Icon-box">
-                    <Globe size={38} color="#093343" />
+                    <Globe size={30} color="#093343" />
                 </div>
 
                 <div className="NavbarText">
@@ -45,7 +45,7 @@ export default function InputSearch() {
 
             <div className="NavbarCard">
                 <div className="Icon-box">
-                    <ShieldCheck size={38} color="#093343" />
+                    <ShieldCheck size={30} color="#093343" />
                 </div>
 
                 <div className="NavbarText">

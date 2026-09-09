@@ -77,8 +77,8 @@
 }
 
 .li1 {
-    background-color: #e9e9e9;
-    color: #093343;
+    background-color: #093343;
+    color: #ffffff;
 }
 
 .Nav1 li a {
@@ -89,12 +89,12 @@
 }
 
 .Nav1 li:hover {
-    background-color: #EEF4FF;
+    background-color: #0e303d;
     transform: translateY(-2px);
 }
 
 .Nav1 li:hover a {
-    color: #093343;
+    color: #e1e1e1;
 }
 
 .Nav2 {

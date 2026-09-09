@@ -16,7 +16,7 @@ import CardPeople from "./components/ui/card/CardPeople.jsx";
 import UserLogin from "./components/ui/form/UserLogin.jsx";
 import "./styles/index.css";
 import Image from "./assets/download.jpg";
-
+import BackgroundImage from "./assets/background/background_alumni.png";
 function App() {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -98,11 +98,19 @@ function App() {
                 <Video />
             </div>
 
-            <div className="bg-gray-50">
+            <div>
                 <Layanankami />
-                <Card />
+
+                <div className="relative w-full overflow-hidden py-10">
+                    <img src={BackgroundImage} alt="Background" className="absolute inset-0 object-cover z-0" />
+                    <div className="relative z-10 mx-auto">
+                        <Card className="bg-transparent border-none shadow-none" />
+                    </div>
+                </div>
+
                 <Question />
             </div>
+
             <CardPeople />
             <Footer />
         </div>
