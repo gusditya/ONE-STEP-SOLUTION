@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 .Tatacara {
     display: flex;
@@ -13,19 +14,19 @@
 
 .Title-Tatacara {
     padding: 20px 0;
-    font-weight: bold;
+    font-weight: 800;
     text-align: center;
 }
 
 .Title-span1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 45px;
 }
 
 .Title-span2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
     margin-top: -20px;
-    color: #2563EB;
+    color: #093343;
 }
 
 .Container-Card {
@@ -59,7 +60,7 @@
     width: 84px;
     height: 84px;
     border-radius: 50%;
-    background: #bbd0ff6d;
+    background: #d0d0d06d;
 
     display: flex;
     justify-content: center;
@@ -70,7 +71,7 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: #2563EB;
+    background: #093343;
 
     display: flex;
     justify-content: center;
@@ -101,11 +102,11 @@
 
 .timeline-line {
     position: absolute;
-    top: 100px;              /* sejajar dengan titik */
+    top: 100px;
     left: 6%;
     right: 6%;
     height: 2px;
-    border-top: 2px dashed #8eb2ff;
+    border-top: 2px dashed #093343;
     z-index: -1;
 }
 
@@ -123,7 +124,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #2563EB;
+    background: #093343;
     color: white;
 
     display: flex;

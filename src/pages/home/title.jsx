@@ -1,14 +1,19 @@
 import "./title.css";
 import { ArrowRight } from "lucide-react";
+import Toga from "../../assets/toga.png";
 
 export default function title() {
     return (
         <div className="title-container">
-            <div className="subtitle">
+            {/* <div className="subtitle">
                 <h3>#Education Consultant di Bali</h3>
-            </div>
+            </div> */}
 
+            <div className="background"></div>
             <div className="title">
+                <div className="toga-container">
+                    <img src={Toga} alt="Toga" className="toga-image" />
+                </div>
                 <h1 className="text1">Your Dream.</h1>
                 <h1 className="text2">Our Mission.</h1>
             </div>
@@ -22,10 +27,10 @@ export default function title() {
 
             <div className="title-button">
                 <button className="Button1">Konsultasi Gratis
-                <ArrowRight size={18} className="btn"/>
+                    <ArrowRight size={18} className="btn" />
                 </button>
                 <button className="Button2">Explore Negara
-                <ArrowRight size={18} className="btn"/>
+                    <ArrowRight size={18} className="btn" />
                 </button>
             </div>
         </div>

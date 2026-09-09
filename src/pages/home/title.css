@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 .title-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subtitle {
-    color: #2563EB;
+    color: #093343;
     padding: 10px 20px;
     margin: 0;
     width: 270px;
-    background-color: #dbe6eb8d;
+    background-color: #e0e4e58d;
     border-radius: 50px;
     font-family: "Poppins", sans-serif;
 
@@ -25,35 +30,61 @@
     font-size: 15px;
 }
 
+.toga-container {
+    display: flex;
+    justify-content: right;
+    width: 65%;
+    margin-bottom: -10px;
+}
+
+.toga-image {
+    width: 40px;
+    height: auto;
+}
+
+.background {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background-image: url("@/assets/background/background_line.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 .title {
-    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 5px;
     line-height: 1;
     padding-bottom: 10px;
+    background-size: cover;
 }
 
 .title h1 {
     font-size: 60px;
-    font-weight: 600;
+    font-weight:bold;
     margin: 0;
 }
 
 .text1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
     color: rgb(2, 2, 2);
 }
 
 .text2 {
-    background: linear-gradient(90deg, #3974f4, #19138e);
+    background: linear-gradient(90deg, #4D7889, #093343);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     background-clip: text;
     color: transparent;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .subtitle-1 h4 {
@@ -79,7 +110,7 @@
     padding: 15px 40px;
     border-radius: 999px;
     border: none;
-    background-color: #2563EB;
+    background-color: #093343;
     color: white;
 }
 
@@ -93,8 +124,8 @@
     padding: 15px 40px;
     border-radius: 999px;
     border: none;
-    color: #2563EB;
-    border: 2px solid #2563EB;
+    color: #093343;
+    border: 2px solid #093343;
     background-color: white;
 }
 
