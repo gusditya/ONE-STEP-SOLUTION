@@ -13,8 +13,8 @@
     display: inline-block;
     padding: 8px 18px;
     border-radius: 50px;
-    background: #e8f1ff;
-    color: #0d5bdd;
+    background: #093343;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 20px;
     font-size: .9rem;
@@ -22,13 +22,13 @@
 
 .section-title h2 {
     font-size: 3rem;
-    color: #15356d;
+    color: #093443;
     font-weight: 800;
     line-height: 1.2;
 }
 
 .section-title h2 span {
-    color: #0d6efd;
+    color: #093343;
 }
 
 .section-title p {
@@ -57,19 +57,18 @@
     position: relative;
     flex: 0 0 400px;
     width: 390px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     border-radius: 30px;
     cursor: pointer;
     transition: .4s;
-    background: linear-gradient(180deg, #0c54b8, #063f97);
+    background: linear-gradient(180deg, #093343 35%, #000104 100%);
 }
 
 .card-bg {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at top, rgba(255, 255, 255, .18), transparent 60%);
-
 }
 
 .consultant-card img {
@@ -123,7 +122,7 @@
     border: none;
     border-radius: 50%;
     background: white;
-    color: #0d67e8;
+    color: #093343;
     font-size: 22px;
     cursor: pointer;
     box-shadow: 0 12px 35px rgba(0, 0, 0, .15);
@@ -132,11 +131,11 @@
 }
 
 .text-cardpeople {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .arrow:hover {
-    background: #0d67e8;
+    background: #093343;
     color: white;
 }
 

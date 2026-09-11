@@ -30,7 +30,7 @@ const FaqSection = () => {
             <div className="faq-container">
                 <div className="faq-header">
                     <span className="faq-badge">Bantuan & Informasi</span>
-                    <h2>PERTANYAAN YANG SERING DITANYAKAN</h2>
+                    <h2>Pertanyaan Yang Sering Ditanyakan</h2>
                 </div>
 
                 <div className="faq-content">
@@ -40,36 +40,21 @@ const FaqSection = () => {
                             return (
                                 <div
                                     key={index}
-                                    className={`faq-item ${isOpen ? 'active' : ''}`}
-                                >
+                                    className={`faq-item ${isOpen ? 'active' : ''}`}>
                                     <button
                                         className="faq-button"
                                         onClick={() => toggleAccordion(index)}
-                                        aria-expanded={isOpen}
-                                    >
+                                        aria-expanded={isOpen}>
                                         <span>{item.question}</span>
-                                        <svg
-                                            className="faq-icon"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M19 9l-7 7-7-7"
-                                            />
+                                        <svg className="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"/>
                                         </svg>
                                     </button>
 
                                     <div
                                         className="faq-answer"
                                         ref={(el) => (answerRefs.current[index] = el)}
-                                        style={{
-                                            maxHeight: isOpen
-                                                ? `${answerRefs.current[index]?.scrollHeight || 200}px`
-                                                : '0px'
+                                        style={{ maxHeight: isOpen ? `${answerRefs.current[index]?.scrollHeight || 200}px` : '0px'
                                         }}
                                     >
                                         <div className="faq-answer-content">

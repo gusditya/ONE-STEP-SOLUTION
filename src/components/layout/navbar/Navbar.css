@@ -113,9 +113,9 @@
 }
 
 .Nav2:hover {
-    background: #1D4ED8;
+    background: #093343;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 10px 25px rgba(203, 203, 203, 0.25);
 }
 
 .calendar-icon {

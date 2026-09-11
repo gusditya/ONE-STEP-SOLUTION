@@ -79,7 +79,7 @@ function App() {
 
     return (
         <div className="app">
-            <Navbar user={user} onLogout={handleLogout} />
+            <Navbar user={user} onLogout={handleLogout} className="fixed"/>
             <div className="ContainerTitle">
                 <div className="hero">
                     <div className="hero-left">

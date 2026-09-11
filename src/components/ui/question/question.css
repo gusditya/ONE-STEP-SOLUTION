@@ -28,14 +28,14 @@
 }
 
 .faq-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .faq-badge {
     display: inline-block;
     padding: 0.35rem 1rem;
-    background-color: #e8edff;
-    color: #2563EB;
+    background-color: #093343;
+    color: #ffffff;
     font-size: 0.875rem;
     font-weight: 600;
     border-radius: 9999px;
@@ -45,9 +45,9 @@
 }
 
 .faq-header h2 {
-    font-size: 2.25rem;
+    font-size: 2.50rem;
     font-weight: 800;
-    color: #163B7A;
+    color: #093343;
     letter-spacing: -0.025em;
 }
 
@@ -73,13 +73,13 @@
 }
 
 .faq-item:hover {
-    border-color: #93c5fd;
+    border-color: #093343;
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
 }
 
 .faq-item.active {
-    border-color: #2563eb;
-    background-color: #f8fafc;
+    border-color: #093343;
+    background-color: #ffffff;
 }
 
 .faq-button {
@@ -93,21 +93,21 @@
     text-align: left;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #1e3a8a;
+    color: #093343;
     cursor: pointer;
     gap: 1rem;
     transition: color 0.2s ease;
 }
 
 .faq-button:hover {
-    color: #2563eb;
+    color: #093343;
 }
 
 .faq-icon {
     width: 24px;
     height: 24px;
     min-width: 24px;
-    stroke: #2563eb;
+    stroke: #093343;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
