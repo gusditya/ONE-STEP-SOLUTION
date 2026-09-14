@@ -74,24 +74,6 @@
     transition: .3s ease;
 }
 
-.Canada:hover,
-.Singapore:hover {
-    transform: translate(-10px, -10px);
-    box-shadow:
-    2px 2px 0px 0.8px red, 4px 4px 0px white,
-    6px 6px 0px red, 8px 8px 0px white,
-    10px 10px 0px red, 12px 12px 0px white;
-}
-
-.Australia:hover,
-.United-Kingdom:hover {
-    transform: translate(-10px, -10px);
-    box-shadow:
-    2px 2px 0px 0.8px #0b3590, 4px 4px 0px white,
-    6px 6px 0px #0b3590, 8px 8px 0px white,
-    10px 10px 0px #0b3590, 12px 12px 0px white;
-}
-
 .TextCountry {
     display: flex;
     flex-direction: column;

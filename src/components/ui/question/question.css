@@ -116,9 +116,9 @@
 }
 
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    /* max-height: 0; removed for framer-motion */
+    /* overflow: hidden; removed for framer-motion */
+    /* transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1); removed for framer-motion */
 }
 
 .faq-answer-content {

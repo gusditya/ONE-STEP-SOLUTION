@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import './question.css';
 import Question from "../../../assets/picture/question.png";
+import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
     {
@@ -19,7 +20,6 @@ const faqData = [
 
 const FaqSection = () => {
     const [openIndex, setOpenIndex] = useState(null);
-    const answerRefs = useRef([]);
 
     const toggleAccordion = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -27,7 +27,13 @@ const FaqSection = () => {
 
     return (
         <div className="faq-section-wrapper">
-            <div className="faq-container">
+            <motion.div
+                className="faq-container"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ type: "spring", stiffness: 80, damping: 20 }}
+            >
                 <div className="faq-header">
                     <span className="faq-badge">Bantuan & Informasi</span>
                     <h2>Pertanyaan Yang Sering Ditanyakan</h2>
@@ -46,34 +52,54 @@ const FaqSection = () => {
                                         onClick={() => toggleAccordion(index)}
                                         aria-expanded={isOpen}>
                                         <span>{item.question}</span>
-                                        <svg className="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <motion.svg
+                                            className="faq-icon"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            animate={{ rotate: isOpen ? 180 : 0 }}
+                                            transition={{ duration: 0.2 }}
+                                        >
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"/>
-                                        </svg>
+                                        </motion.svg>
                                     </button>
 
-                                    <div
-                                        className="faq-answer"
-                                        ref={(el) => (answerRefs.current[index] = el)}
-                                        style={{ maxHeight: isOpen ? `${answerRefs.current[index]?.scrollHeight || 200}px` : '0px'
-                                        }}
-                                    >
-                                        <div className="faq-answer-content">
-                                            {item.answer}
-                                        </div>
-                                    </div>
+                                    <AnimatePresence>
+                                        {isOpen && (
+                                            <motion.div
+                                                className="faq-answer"
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: 'auto', opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                style={{ overflow: 'hidden' }}
+                                            >
+                                                <div className="faq-answer-content">
+                                                    {item.answer}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
                                 </div>
                             );
                         })}
                     </div>
 
-                    <div className="faq-illustration">
+                    <motion.div
+                        className="faq-illustration"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
+                    >
                         <img
                             src={Question}
                             alt="Maskot FAQ"
                         />
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

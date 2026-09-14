@@ -1,53 +1,205 @@
-.Layanankami {
-    padding: 40px;
-    padding: 80px;
+.Layanankami-timeline {
+    padding: 80px 20px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 50px;
 }
 
 .text-layanankami {
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Geist Variable', sans-serif;
     color: #093343;
 }
 
-.Card-layanankami {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Card1-layanankami {
-    width: 260px;
-    height: 240px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0px 10px rgba(37, 100, 235, 0.13);
-
-    padding: 20px;
-    padding-left: 30px;
-
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 80px;
+    padding: 20px 0;
 }
 
-.IconBox {
-    background-color: #EEEEEE;
-    width: 60px;
-    height: 60px;
-    color: #093343;
+.timeline-bg-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #E5E7EB;
+    transform: translateX(-50%);
+}
 
+.timeline-active-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    background-color: #093343;
+    transform: translateX(-50%);
+    transition: height 0.15s ease-out;
+}
+
+.timeline-row {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.left-row {
+    justify-content: flex-start;
+}
+
+.right-row {
+    justify-content: flex-end;
+}
+
+.timeline-dot-container {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    z-index: 2;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 
-.Box-text {
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.timeline-row.active .timeline-dot {
+    background-color: #093343;
+    border-color: #093343;
+}
+
+.timeline-content-wrapper {
+    width: 50%;
+    padding: 0 80px;
+    position: relative;
+}
+
+.left-row .timeline-content-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-end;
+    text-align: right;
 }
 
-.Box-text h4 {
-    font-size: 15px;
+.right-row .timeline-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-row .timeline-content {
+    align-items: flex-end;
+}
+
+.right-row .timeline-content {
+    align-items: flex-start;
+}
+
+.timeline-number {
+    font-size: 80px;
+    font-weight: 700;
+    color: #E5E7EB;
+    line-height: 1;
+    margin-bottom: -10px;
+    transition: color 0.4s ease;
+    font-family: 'Geist Variable', sans-serif;
+}
+
+.timeline-row.active .timeline-number {
+    color: #093343;
+}
+
+.timeline-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #093343;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 2;
+}
+
+.left-row .timeline-title {
+    flex-direction: row-reverse;
+}
+
+.timeline-desc {
+    font-size: 16px;
+    color: #6B7280;
+    max-width: 380px;
+    line-height: 1.6;
+}
+
+.icon-container {
+    color: #6B7280;
+    background-color: white;
+    padding: 12px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.timeline-row.active .icon-container {
+    color: white;
+    background-color: #093343;
+    box-shadow: 0 10px 25px -5px rgba(100, 98, 171, 0.4);
+}
+
+@media (max-width: 768px) {
+    .timeline-bg-line, .timeline-active-line {
+        left: 40px;
+        transform: none;
+    }
+
+    .timeline-dot-container {
+        left: 40px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-content-wrapper {
+        width: 100%;
+        padding: 0 20px 0 80px !important;
+    }
+
+    .left-row .timeline-content-wrapper,
+    .right-row .timeline-content-wrapper {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .left-row .timeline-content,
+    .right-row .timeline-content {
+        align-items: flex-start;
+    }
+
+    .left-row .timeline-title,
+    .right-row .timeline-title {
+        flex-direction: row;
+    }
 }

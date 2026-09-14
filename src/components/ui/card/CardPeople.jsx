@@ -1,5 +1,6 @@
 import "./CardPeople.css";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 import Nadya from "../../../assets/people/nadya.png";
 import Astina from "../../../assets/people/astina.png";
@@ -28,7 +29,13 @@ export default function Consultant() {
     return (
         <section className="consultant-section">
 
-            <div className="section-title">
+            <motion.div 
+                className="section-title"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 100 }}
+            >
                 <span className="badge">OUR CONSULTANT</span>
 
                 <h2 className="text-cardpeople">Temukan Solusimu Bersama Ahli Kami</h2>
@@ -37,9 +44,15 @@ export default function Consultant() {
                     Konsultasikan rencana studi luar negerimu bersama tim profesional
                     yang siap membimbing dari awal hingga keberangkatan.
                 </p>
-            </div>
+            </motion.div>
 
-            <div className="consultant-wrapper">
+            <motion.div 
+                className="consultant-wrapper"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.8 }}
+            >
                 <button className="arrow left" onClick={scrollLeft}>&#10094;</button>
 
                 <div className="consultant-container" ref={sliderRef}>
@@ -97,7 +110,7 @@ export default function Consultant() {
                     &#10095;
                 </button>
 
-            </div>
+            </motion.div>
 
         </section>
     );

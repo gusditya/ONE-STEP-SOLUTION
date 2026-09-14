@@ -5,6 +5,7 @@ import Pengalaman3 from "../../../assets/pengalaman/pengalaman3.png"
 import Pengalaman4 from "../../../assets/pengalaman/pengalaman4.png"
 import backgroundPeople from "../../../assets/background/background_people.png"
 import Rectangle from "../../../assets/background/Rectangle.png"
+import { motion } from "framer-motion";
 
 const pengalamanData = [
     {
@@ -37,9 +38,9 @@ const pengalamanData = [
     }
 ];
 
-function CardAlumni({ image, title, alumni, description }) {
+function CardAlumni({ image, title, alumni, description, variants }) {
     return (
-        <article className="card-alumni-item">
+        <motion.article className="card-alumni-item" variants={variants} whileHover={{ y: -5 }}>
             <img src={Rectangle} alt="" className="card-background" />
 
             <div className="card-alumni-left">
@@ -61,14 +62,33 @@ function CardAlumni({ image, title, alumni, description }) {
                     <p className="alumni-description">{description}</p>
                 </div>
             </div>
-        </article>
+        </motion.article>
     );
 }
 
 export default function Card() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.15 },
+        },
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, x: -30 },
+        visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 100 } },
+    };
+
     return (
         <div className="Card-Pengalaman">
-            <div className="Card-Pengalaman-Title">
+            <motion.div 
+                className="Card-Pengalaman-Title"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 100 }}
+            >
                 <div className="Card-Pengalaman-Title-Text">
                     <h3>TESTIMONI ALUMNI</h3>
                 </div>
@@ -77,9 +97,15 @@ export default function Card() {
                     <h1>Apa Kata Mereka</h1>
                     <h3>Kisah nyata dari para alumni yang telah meraih mimpi bersama OSS Bali</h3>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="Card-Pengalaman-text">
+            <motion.div 
+                className="Card-Pengalaman-text"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+            >
                 {pengalamanData.map((pengalaman) => (
                     <CardAlumni
                         key={pengalaman.id}
@@ -87,9 +113,10 @@ export default function Card() {
                         title={pengalaman.title}
                         alumni={pengalaman.alumni}
                         description={pengalaman.description}
+                        variants={cardVariants}
                     />
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 }

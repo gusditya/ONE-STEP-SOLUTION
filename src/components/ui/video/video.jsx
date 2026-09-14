@@ -1,9 +1,29 @@
 import "./video.css";
+import { motion } from "framer-motion";
 
 export default function video() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2 },
+        },
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
+    };
+
     return (
         <section className="video-section">
-            <div className="video-header">
+            <motion.div 
+                className="video-header"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 100 }}
+            >
                 <span>Video Edukasi</span>
                 <h2>Belajar Bersama One Step Solution</h2>
                 <p>
@@ -11,10 +31,16 @@ export default function video() {
                     persiapan keberangkatan,
                     hingga peluang karier di luar negeri.
                 </p>
-            </div>
+            </motion.div>
 
-            <div className="video-grid">
-                <div className="video-card">
+            <motion.div 
+                className="video-grid"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+            >
+                <motion.div className="video-card" variants={cardVariants} whileHover={{ y: -5 }}>
                     <iframe src="https://www.youtube.com/embed/xKatx3USazQ"
                         allowFullScreen></iframe>
                     <div className="video-content">
@@ -26,9 +52,9 @@ export default function video() {
                             ▶ Tonton Video
                         </a>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="video-card">
+                <motion.div className="video-card" variants={cardVariants} whileHover={{ y: -5 }}>
                     <iframe src="https://www.youtube.com/embed/BdcyBPoG-kY"
                         allowFullScreen></iframe>
                     <div className="video-content">
@@ -40,8 +66,9 @@ export default function video() {
                             ▶ Tonton Video
                         </a>
                     </div>
-                </div>
-                <div className="video-card">
+                </motion.div>
+
+                <motion.div className="video-card" variants={cardVariants} whileHover={{ y: -5 }}>
                     <iframe src="https://www.youtube.com/embed/Py1jA2EjCmk"
                         allowFullScreen></iframe>
                     <div className="video-content">
@@ -53,8 +80,8 @@ export default function video() {
                             ▶ Tonton Video
                         </a>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }
