@@ -25,7 +25,7 @@ export default function title() {
     };
 
     return (
-        <motion.div 
+        <motion.div
             className="title-container"
             variants={containerVariants}
             initial="hidden"
@@ -33,13 +33,12 @@ export default function title() {
         >
             <div className="background"></div>
             <motion.div className="title" variants={itemVariants}>
-                <motion.div 
-                    className="toga-container" 
+                <motion.div
+                    className="toga-container"
                     initial={{ scale: 0.5, opacity: 0, rotate: -20 }}
                     animate={{ scale: 1, opacity: 1, rotate: 0 }}
                     transition={{ type: "spring", delay: 0.5, stiffness: 200 }}
                 >
-                    <img src={Toga} alt="Toga" className="toga-image" />
                 </motion.div>
                 <h1 className="text1">Your Dream.</h1>
                 <h1 className="text2">Our Mission.</h1>
@@ -53,14 +52,14 @@ export default function title() {
             </motion.div>
 
             <motion.div className="title-button" variants={itemVariants}>
-                <motion.button 
+                <motion.button
                     className="Button1"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >Konsultasi Gratis
                     <ArrowRight size={18} className="btn" />
                 </motion.button>
-                <motion.button 
+                <motion.button
                     className="Button2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

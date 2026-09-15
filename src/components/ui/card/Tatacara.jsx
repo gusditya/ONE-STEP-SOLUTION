@@ -51,7 +51,7 @@ export default function Tatacara() {
 
     return (
         <div className="Tatacara">
-            <motion.div 
+            <motion.div
                 className="Title-Tatacara"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function Tatacara() {
             </motion.div>
 
             <div className="Container-Card">
-                <motion.div 
+                <motion.div
                     className="timeline"
                     variants={containerVariants}
                     initial="hidden"
@@ -76,7 +76,7 @@ export default function Tatacara() {
                         return (
                             <motion.div key={step.id} className="Card-Tatacara" variants={itemVariants}>
                                 <div className="Number">
-                                    <div className="timeline-dot">{step.id}</div>
+                                    <div className="dot">{step.id}</div>
                                     <div className="circle">
                                         <div className="SubCard-Tatacara">
                                             <Icon color="White" size={36} />

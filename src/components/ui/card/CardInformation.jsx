@@ -20,7 +20,7 @@ export default function CardInformation() {
     };
 
     return (
-        <motion.div 
+        <motion.div
             className="CardInformation"
             variants={containerVariants}
             initial="hidden"
@@ -32,7 +32,7 @@ export default function CardInformation() {
                     <img src={Canada} className="country" />
                 </div>
                 <div className="TextCountry">
-                    <h4 className="font-bold text-lg">Canada</h4>
+                    <h4 className="font-bold text-md">Canada</h4>
                     <h5>Toronto</h5>
                 </div>
             </motion.div>
@@ -42,7 +42,7 @@ export default function CardInformation() {
                     <img src={UK} className="country" />
                 </div>
                 <div className="TextCountry">
-                    <h4 className="font-bold text-lg">UK</h4>
+                    <h4 className="font-bold text-md">UK</h4>
                     <h5>London</h5>
                 </div>
             </motion.div>
@@ -52,7 +52,7 @@ export default function CardInformation() {
                     <img src={Australia} className="country" />
                 </div>
                 <div className="TextCountry">
-                    <h4 className="font-bold text-lg">Australia</h4>
+                    <h4 className="font-bold text-md">Australia</h4>
                     <h5>Sydney</h5>
                 </div>
             </motion.div>
@@ -62,7 +62,7 @@ export default function CardInformation() {
                     <img src={Singapore} className="country" />
                 </div>
                 <div className="TextCountry">
-                    <h4 className="font-bold text-lg">Singapura</h4>
+                    <h4 className="font-bold text-md">Singapura</h4>
                     <h5>Woodland</h5>
                 </div>
             </motion.div>

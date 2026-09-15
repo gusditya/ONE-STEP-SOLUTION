@@ -14,6 +14,7 @@ import Layanankami from "../../components/ui/card/Layanankami.jsx";
 import Card from "../../components/ui/card/Card.jsx";
 import Question from "../../components/ui/question/question.jsx";
 import CardPeople from "../../components/ui/card/CardPeople.jsx";
+import Country from "../../components/ui/card/Country.jsx";
 
 import "../../styles/index.css";
 
@@ -75,14 +76,7 @@ function Beranda() {
 
     if (loading) {
         return (
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    minHeight: "100vh",
-                }}
-            >
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh", }}>
                 <p>Memuat...</p>
             </div>
         );
@@ -90,23 +84,13 @@ function Beranda() {
 
     return (
         <div className="app">
-            <Navbar
-                user={user}
-                onLogout={handleLogout}
-            />
+            <Navbar user={user} onLogout={handleLogout}/>
 
             <div className="ContainerTitle">
                 <div className="hero">
                     <div className="hero-left">
                         <Title />
-
-                        <img
-                            src={Image}
-                            alt="Hero"
-                            width={200}
-                            height={200}
-                            className="hero-image"
-                        />
+                        <img src={Image} alt="Hero" width={200} height={200} className="hero-image" />
                     </div>
 
                     <CardInformation />
@@ -139,7 +123,7 @@ function Beranda() {
 
                 <Question />
             </div>
-
+            <Country />
             <CardPeople />
 
             <Footer />

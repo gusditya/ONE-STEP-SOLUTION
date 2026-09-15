@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translateY(-80px);
     padding: 0 40px;
     box-sizing: border-box;
 }
@@ -20,7 +19,7 @@
 
 .Title-span1 {
     font-family: 'Urbanist', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .Title-span2 {
@@ -117,22 +116,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 180px;
+    max-width: 160px;
 }
 
-.timeline-dot {
+.dot {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #093343;
-    color: white;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: #093343;
+    color: white;
+    
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 12px;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
 }

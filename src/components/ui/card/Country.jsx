@@ -1,8 +1,8 @@
 import background from '@/assets/background/Worldmap.png'
-
+import "./Country.css";
 import amerika from '@/assets/country/amerikaflag.jpg'
 import australia from '@/assets/country/australiaflag.png'
-import belanda from '@/assets/country/belanda.jpg'
+import belanda from '@/assets/country/belandaflag.jpg'
 import belgia from '@/assets/country/belgiaflag.jpg'
 import canada from '@/assets/country/canadaflag.png'
 import china from '@/assets/country/chinaflag.jpg'
@@ -126,12 +126,30 @@ const DataCountry = [
 
 export default function Country() {
     return (
-        <div className="container">
-            {DataCountry.map((item) => (
-                <div className="card" key={item.id}>
-                    <h3>{item.title}</h3>
+        <section className="country-section">
+            <div className="country-background">
+                <img src={background} alt="" />
+            </div>
+
+            <div className="country-content">
+                <div className="country-header">
+                    <p>DESTINASI STUDI</p>
+                    <div className="title-country">
+                        <h2> Pilihan Negara
+                            <span> Impianmu</span>
+                        </h2>
+                        <p className="country-description"> Temukan berbagai pilihan negara terbaik untuk melanjutkan pendidikanmu. </p>
+                    </div>
                 </div>
-            ))}
-        </div>
-    )
+
+                <div className="country-grid">
+                    {DataCountry.map((item) => (
+                        <div className="country-card" key={item.id} >
+                            <img src={item.image} alt={item.title} className="country-flag" />
+                            <h3>{item.title}</h3>
+                        </div>))}
+                </div>
+            </div>
+        </section>
+    );
 }

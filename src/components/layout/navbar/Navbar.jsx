@@ -48,21 +48,9 @@ export default function Navbar({ user, onLogout }) {
 
             <div className="Nav2" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to="/konsultasi" className="a_start" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <Calendar size={18} className="calendar-icon" />
-                    <span>Konsultasi Gratis</span>
+                    <Calendar size={14} className="calendar-icon" />
+                    <h4>Konsultasi Gratis</h4>
                 </Link>
-
-                {/* TOMBOL LOGOUT (Aktifkan jika user sudah login) */}
-                {/* {user && (
-                    <button
-                        onClick={handleLogout}
-                        className="btn-logout"
-                        title="Keluar / Logout"
-                        style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
-                        <LogOut size={18} />
-                        <span>Keluar</span>
-                    </button>
-                )} */}
             </div>
         </div>
     );
