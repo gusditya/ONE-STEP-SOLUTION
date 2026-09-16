@@ -3,17 +3,33 @@ import Logo from '../../../assets/Logo.png';
 import { Calendar, LogOut } from "lucide-react";
 import { NavLink, Link } from 'react-router-dom';
 import { supabase } from '../../ui/form/supabaseClient';
+import { useEffect, useState } from 'react';
 
 export default function Navbar({ user, onLogout }) {
+    const [scrolled, setScrolled] = useState(false);
 
-    const handleLogout = async () => {
-        localStorage.removeItem('user_session');
-        await supabase.auth.signOut();
-        if (onLogout) onLogout();
-    };
+    useEffect(() => {
+
+        const handleScroll = () => {
+
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
 
     return (
-        <div className="Navbar">
+        <div className={`Navbar ${scrolled ? 'scrolled' : ''}`}>
             <Link to="/" className="Logo-navbar">
                 <img src={Logo} className="Image" alt="Logo" />
                 <div className="title-navbar">

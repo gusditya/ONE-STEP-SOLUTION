@@ -1,0 +1,423 @@
+/* Responsive — desktop design unchanged; layout adapts for tablet & mobile */
+
+/* ——— Tablet (iPad landscape & similar) ——— */
+@media (max-width: 1024px) {
+    .Navbar,
+    .Navbar.scrolled {
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .Nav1 {
+        order: 3;
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+    }
+
+    .Nav1::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Nav1 li {
+        padding: 7px 14px;
+    }
+
+    .Nav1 li a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 24px 24px;
+        min-height: auto;
+    }
+
+    .hero-left {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 72px;
+        width: 100%;
+    }
+
+    .hero-image {
+        align-self: center;
+        width: min(100%, 320px);
+        max-width: 320px;
+        margin: 24px auto 0;
+        margin-right: 0;
+        transform: scale(1.1);
+    }
+
+    .CardInformation {
+        position: relative;
+        width: 100%;
+        min-height: 0;
+        margin-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .Canada,
+    .United-Kingdom,
+    .Australia,
+    .Singapore {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100%;
+        max-width: none;
+    }
+
+    .title-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .subtitle {
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .subtitle-1 h4 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .background {
+        width: min(400px, 85vw);
+        height: auto;
+        min-height: 200px;
+    }
+
+    .text1 {
+        font-size: clamp(28px, 5vw, 45px);
+    }
+
+    .text2 {
+        font-size: clamp(34px, 6vw, 55px);
+    }
+
+    .title-button {
+        flex-wrap: wrap;
+    }
+
+    .Card-Pengalaman {
+        padding-left: 24px;
+        padding-right: 24px;
+        height: auto;
+        padding-bottom: 48px;
+    }
+
+    .Card-Pengalaman-text {
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .Tatacara {
+        padding: 0 20px;
+    }
+
+    .Title-span1 {
+        font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .timeline {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 16px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .AllCountry {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .AllCountry > * {
+        flex: 1 1 calc(50% - 12px);
+        min-width: min(100%, 280px);
+        max-width: 100%;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .video-header h2 {
+        font-size: clamp(32px, 4vw, 48px);
+    }
+
+    .country-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .country-background {
+        width: min(700px, 92vw) !important;
+        height: auto !important;
+        aspect-ratio: 850 / 500;
+    }
+
+    .faq-container {
+        padding: 2.5rem 2rem;
+    }
+
+    .faq-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Footer-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Location,
+    .Telepon,
+    .Mail {
+        justify-content: center;
+    }
+
+    .Footer-left img {
+        width: min(300px, 80vw);
+    }
+
+    .Footer-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 48px;
+        padding-top: 0;
+    }
+
+    .Footer-Bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .consultant-section {
+        padding: 72px 5%;
+    }
+
+    .section-title h2 {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+}
+
+/* ——— iPad portrait & large phones ——— */
+@media (max-width: 768px) {
+    .Navbar,
+    .Navbar.scrolled {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Image {
+        width: 72px;
+    }
+
+    .title-navbar h2 {
+        font-size: 16px;
+    }
+
+    .title-navbar h3 {
+        font-size: 12px;
+    }
+
+    .Nav2 {
+        margin-left: auto;
+        padding: 8px 14px;
+    }
+
+    .Nav2 h4 {
+        font-size: 12px;
+    }
+
+    .hero-left {
+        margin-top: 56px;
+    }
+
+    .ContainerTitle {
+        margin-bottom: 24px;
+    }
+
+    .Title-Tatacara .Title-span1,
+    .Title-span1 {
+        font-size: 26px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 24px;
+    }
+
+    .timeline-item {
+        max-width: 100%;
+    }
+
+    .Subtitle-Tatacara h4 {
+        width: auto;
+        max-width: 280px;
+    }
+
+    .CardCountry {
+        padding: 40px 16px;
+    }
+
+    .video-section {
+        padding: 48px 16px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Layanankami-timeline {
+        padding: 48px 16px;
+    }
+
+    .Title-Card-Pengalaman h1 {
+        font-size: clamp(28px, 6vw, 45px);
+        text-align: center;
+    }
+
+    .Title-Card-Pengalaman h3 {
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .card-alumni-item {
+        flex: 0 0 min(calc(100vw - 48px), 750px);
+    }
+
+    .card-alumni-content {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .faq-section-wrapper {
+        min-height: auto;
+        padding: 32px 0;
+    }
+
+    .faq-container {
+        padding: 2rem 1.25rem;
+    }
+
+    .faq-header h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+
+    .country-header h2 {
+        font-size: clamp(28px, 6vw, 42px);
+    }
+
+    .country-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .country-card h3 {
+        white-space: normal;
+    }
+
+    .consultant-card {
+        flex: 0 0 min(calc(100vw - 80px), 400px);
+        width: min(calc(100vw - 80px), 390px);
+    }
+
+    .arrow.left {
+        left: 4px;
+    }
+
+    .arrow.right {
+        right: 4px;
+    }
+}
+
+/* ——— Phones ——— */
+@media (max-width: 480px) {
+    .Nav1 li {
+        padding: 6px 12px;
+    }
+
+    .Nav1 li a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 0 16px 16px;
+    }
+
+    .hero-image {
+        transform: none;
+        width: min(100%, 260px);
+    }
+
+    .CardInformation {
+        grid-template-columns: 1fr;
+    }
+
+    .Button1,
+    .Button2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title-button {
+        width: 100%;
+    }
+
+    .AllCountry {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .AllCountry > * {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .Kampus,
+    .Layanan,
+    .dukungan {
+        width: auto;
+        min-width: 140px;
+    }
+
+    .country-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .country-background {
+        width: min(450px, 95vw) !important;
+    }
+
+    .Card-Pengalaman-Title-Text {
+        margin-top: 40px;
+    }
+}

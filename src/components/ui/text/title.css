@@ -72,13 +72,13 @@
 }
 
 .text1 {
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Arial', sans-serif;
     color: rgb(2, 2, 2);
 }
 
 .text2 {
-    background: linear-gradient(90deg, #6f99a9, #093343);
+    background: linear-gradient(150deg, #093343, #6f99a9 );
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@
     background-clip: text;
     color: transparent;
     font-family: 'Arial', sans-serif;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .subtitle-1 h4 {

@@ -20,10 +20,66 @@
 .Navbar {
     display: flex;
     align-items: center;
-    gap: 24px;
     width: 100%;
     max-width: 100%;
     padding: 12px 80px 0;
+    transition:
+        background-color 0.3s ease,
+        padding 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.Navbar.scrolled .title-navbar h2,
+.Navbar.scrolled .title-navbar h3 {
+    color: white;
+}
+
+.Navbar.scrolled .Nav1 li a {
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.Navbar.scrolled .li1 {
+    background-color: #ffffff;
+    color: #093343;
+}
+
+.Navbar.scrolled .a1.active {
+    color: #093343;
+}
+
+.Navbar.scrolled {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #093343;
+    padding: 12px 80px;
+    z-index: 1000;
+}
+
+.Navbar.scrolled .Nav2 {
+    background-color: #ffffff;
+    color: #093343;
+}
+
+.Navbar.scrolled .Nav2 .calendar-icon {
+    color: #093343;
+}
+
+.Navbar.scrolled .Nav2 .a_start {
+    color: #093343;
+    font-weight: 500;
+}
+
+.Navbar.scrolled .Nav2:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(179, 179, 179, 0.15);
 }
 
 .Logo-navbar {
