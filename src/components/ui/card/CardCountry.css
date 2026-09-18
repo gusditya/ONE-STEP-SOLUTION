@@ -1,141 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 .CardCountry {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    padding-top: 80px;
-    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 80px 24px 48px;
+    gap: 40px;
+    box-sizing: border-box;
 }
 
-.text1-cardcountry {
+.CardCountry-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 640px;
+}
+
+.CardCountry-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background-color: #093343;
+    color: #ffffff;
     font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.CardCountry-title {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 800;
+    line-height: 1.15;
     color: #093343;
 }
 
-.AllCountry {
-    display: flex;
-    flex-direction: row;
+.CardCountry-subtitle {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5c6b72;
+}
+
+.AllCountry.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
+    width: 100%;
 }
 
-.subtitle-card {
-    background: linear-gradient(to top, rgba(95, 95, 95, 0.815) 0%, rgba(103, 103, 103, 0.711) 50%, rgba(255, 255, 255, 0));
-    height: 130px;
-    padding-top: 10px;
-    padding-left: 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 20px;
-}
-
-.Materi {
+.dest-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    min-height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(9, 51, 67, 0.08);
+    box-shadow:
+        0 4px 24px rgba(9, 51, 67, 0.06),
+        0 1px 3px rgba(9, 51, 67, 0.04);
+    transition:
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+    cursor: default;
 }
 
-.countrycard {
+.dest-card:hover {
+    border-color: rgba(9, 51, 67, 0.14);
+    box-shadow:
+        0 16px 40px rgba(9, 51, 67, 0.12),
+        0 4px 12px rgba(9, 51, 67, 0.06);
+}
+
+.dest-card__media {
     position: relative;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    background-image: url("../../../assets/country/australia.png");
+    aspect-ratio: 4 / 3;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-.subtitle-card h4 {
-    font-weight: 500;
-    font-size: 10px;
+.dest-card__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(9, 51, 67, 0) 35%,
+        rgba(9, 51, 67, 0.35) 100%
+    );
+    pointer-events: none;
 }
 
-.text-card {
+.dest-card__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px 18px 20px;
+    flex: 1;
+}
+
+.dest-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.dest-card__title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.dest-card__flag {
+    width: 32px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.dest-card__flag--placeholder {
+    display: inline-block;
+    background: linear-gradient(135deg, #093343 0%, #6f99a9 100%);
+}
+
+.dest-card__title {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #093343;
+}
+
+.dest-card__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 999px;
+    background: #f4f7f8;
+    color: #093343;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dest-card:hover .dest-card__cta {
+    background: #093343;
+    color: #ffffff;
+}
+
+.dest-card:hover .dest-card__cta-icon {
+    transform: translateX(2px);
+}
+
+.dest-card__cta-icon {
+    transition: transform 0.3s ease;
+}
+
+.dest-card__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
-.arrow-country {
-    color: #093343;
-    background-color: white;
-    margin-right: 20px;
-
+.dest-card__list-item {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #4a5960;
+}
+
+.dest-card__check {
+    display: flex;
     align-items: center;
-
-    cursor: pointer;
-    transition: all .35s ease;
-
-    width: 30px;
-    height: 30px;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
     border-radius: 999px;
-
-    transition: all .35s ease;
+    background: rgba(233, 175, 0, 0.18);
+    color: #093343;
 }
 
-.Icon-next {
-    transition: transform .35s ease;
+@media (max-width: 1200px) {
+    .AllCountry.dest-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
-.arrow-country:hover {
-    background:#093343;
+@media (max-width: 768px) {
+    .CardCountry {
+        padding: 48px 16px 32px;
+        gap: 32px;
+    }
 
-    transform:
-        translateY(-4px)
+    .AllCountry.dest-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
 }
 
-.Icon-next:hover {
-    color:white;
-    transform:translateX(5px);
-}
-
-.countrycard1 {
-    position: relative;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    background-image: url("../../../assets/country/Canada.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.countrycard2 {
-    position: relative;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    background-image: url("../../../assets/country/jepang.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.countrycard3 {
-    position: relative;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    background-image: url("../../../assets/country/UK.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.countrycard4 {
-    position: relative;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    background-image: url("../../../assets/country/NZ.jpg");
-    background-size: cover;
-    background-position: center;
+@media (max-width: 480px) {
+    .AllCountry.dest-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+    }
 }

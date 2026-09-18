@@ -14,14 +14,14 @@ export default function Consultant() {
 
     const scrollLeft = () => {
         sliderRef.current.scrollBy({
-            left: -395,
+            left: -595,
             behavior: "smooth",
         });
     };
 
     const scrollRight = () => {
         sliderRef.current.scrollBy({
-            left: 395,
+            left: 595,
             behavior: "smooth",
         });
     };
@@ -29,7 +29,7 @@ export default function Consultant() {
     return (
         <section className="consultant-section">
 
-            <motion.div 
+            <motion.div
                 className="section-title"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export default function Consultant() {
                 </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
                 className="consultant-wrapper"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
