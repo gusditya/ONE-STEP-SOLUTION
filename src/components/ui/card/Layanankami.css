@@ -132,10 +132,14 @@
     color: #093343;
 }
 
+.timeline-row.active .timeline-title {
+    color: #093343;
+}
+
 .timeline-title {
     font-size: 28px;
     font-weight: 700;
-    color: #093343;
+    color: #E5E7EB;
     margin-top: 16px;
     display: flex;
     align-items: center;

@@ -77,7 +77,7 @@ export default function Layanankami() {
 
     return (
         <div className="Layanankami-timeline">
-            <motion.div 
+            <motion.div
                 className="title-layanankami flex flex-col gap-1 items-center text-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -107,18 +107,18 @@ export default function Layanankami() {
                             </div>
 
                             <div className="timeline-content-wrapper">
-                                <motion.div 
+                                {/* <motion.div
                                     className="timeline-content"
                                     initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                                     animate={{ opacity: isActive ? 1 : 0, x: isActive ? 0 : (isEven ? -50 : 50) }}
                                     transition={{ type: "spring", stiffness: 100, damping: 20 }}
-                                >
+                                > */}
                                     <div className="timeline-number">{item.id}</div>
                                     <h3 className="timeline-title">
                                         {item.title}
                                     </h3>
                                     <p className="timeline-desc">{item.desc}</p>
-                                </motion.div>
+                                {/* </motion.div> */}
                             </div>
                         </div>
                     );
