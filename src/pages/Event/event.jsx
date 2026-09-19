@@ -1,10 +1,9 @@
 import React from 'react'
-
+import Navbar from '@/components/layout/navbar/Navbar.jsx'
+import '@/pages/Event/event.css'
 function event() {
     return (
-        <div>
-
-        </div>
+        <Navbar className="NavbarEvent"/>
     )
 }
 
