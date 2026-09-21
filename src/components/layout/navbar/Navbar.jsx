@@ -1,31 +1,24 @@
 import './Navbar.css';
 import Logo from '../../../assets/Logo.png';
-import { Calendar, LogOut } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { NavLink, Link } from 'react-router-dom';
-import { supabase } from '../../ui/form/supabaseClient';
 import { useEffect, useState } from 'react';
 
 export default function Navbar({ user, onLogout }) {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
-
         const handleScroll = () => {
-
             if (window.scrollY > 50) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
             }
-
         };
-
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-
     }, []);
 
     return (
@@ -39,26 +32,26 @@ export default function Navbar({ user, onLogout }) {
             </Link>
 
             <ul className="Nav1">
-                <li className="li1">
-                    <NavLink to="/" className={({ isActive }) => isActive ? "a1 active" : "a1"}>Beranda</NavLink>
+                <li>
+                    <NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Beranda</NavLink>
                 </li>
-                <li className="li2">
-                    <NavLink to="/event" className={({ isActive }) => isActive ? "a2 active" : "a2"}>Event</NavLink>
+                <li>
+                    <NavLink to="/event" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Event</NavLink>
                 </li>
-                <li className="li3">
-                    <NavLink to="/mitra" className={({ isActive }) => isActive ? "a3 active" : "a3"}>Mitra</NavLink>
+                <li>
+                    <NavLink to="/mitra" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Mitra</NavLink>
                 </li>
-                <li className="li4">
-                    <NavLink to="/kampus" className={({ isActive }) => isActive ? "a4 active" : "a4"}>Kampus</NavLink>
+                <li>
+                    <NavLink to="/kampus" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Kampus</NavLink>
                 </li>
-                <li className="li5">
-                    <NavLink to="/berita" className={({ isActive }) => isActive ? "a5 active" : "a5"}>Berita</NavLink>
+                <li>
+                    <NavLink to="/berita" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Berita</NavLink>
                 </li>
-                <li className="li5">
-                    <NavLink to="/tentang-kami" className={({ isActive }) => isActive ? "a5 active" : "a5"}>Tentang Kami</NavLink>
+                <li>
+                    <NavLink to="/tentang-kami" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Tentang Kami</NavLink>
                 </li>
-                <li className="li5">
-                    <NavLink to="/karier" className={({ isActive }) => isActive ? "a5 active" : "a5"}>Karier</NavLink>
+                <li>
+                    <NavLink to="/karier" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Karier</NavLink>
                 </li>
             </ul>
 

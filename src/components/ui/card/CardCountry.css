@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+.Nav1 .nav-link {
+    text-decoration: none;
+    color: #093343;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 999px;
+}
+
+.Nav1 .nav-link:not(.active):hover {
+    color: white;
+}
+
+.Nav1 .nav-link.active {
+    color: white;
+    font-weight: 700;
+    background-color: #093343;
+    padding: 10px 20px;
+}
+
 .CardCountry {
     display: flex;
     flex-direction: column;
