@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState, useRef } from "react";
 import "./Layanankami.css";
 import { GraduationCap, WalletCards, MessageCircleMore, FileText, HousePlus } from "lucide-react";

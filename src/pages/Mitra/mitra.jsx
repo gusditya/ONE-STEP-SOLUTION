@@ -1,6 +1,6 @@
-import React from 'react'
+"use client"
 
-function mitra() {
+function Mitra() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function mitra() {
     )
 }
 
-export default mitra
+export default Mitra

@@ -1,11 +1,16 @@
+"use client"
+
 import './Navbar.css';
-import Logo from '../../../assets/Logo.png';
 import { Calendar } from "lucide-react";
-import { NavLink, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+
+const Logo = '/assets/Logo.png';
 
 export default function Navbar({ user, onLogout }) {
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,7 +28,7 @@ export default function Navbar({ user, onLogout }) {
 
     return (
         <div className={`Navbar ${scrolled ? 'scrolled' : ''}`}>
-            <Link to="/" className="Logo-navbar">
+            <Link href="/" className="Logo-navbar">
                 <img src={Logo} className="Image" alt="Logo" />
                 <div className="title-navbar">
                     <h2>One Step</h2>
@@ -33,30 +38,30 @@ export default function Navbar({ user, onLogout }) {
 
             <ul className="Nav1">
                 <li>
-                    <NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Beranda</NavLink>
+                    <Link href="/" className={pathname === '/' ? 'nav-link active' : 'nav-link'}>Beranda</Link>
                 </li>
                 <li>
-                    <NavLink to="/event" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Event</NavLink>
+                    <Link href="/event" className={pathname === '/event' ? 'nav-link active' : 'nav-link'}>Event</Link>
                 </li>
                 <li>
-                    <NavLink to="/mitra" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Mitra</NavLink>
+                    <Link href="/mitra" className={pathname === '/mitra' ? 'nav-link active' : 'nav-link'}>Mitra</Link>
                 </li>
                 <li>
-                    <NavLink to="/kampus" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Kampus</NavLink>
+                    <Link href="/kampus" className={pathname === '/kampus' ? 'nav-link active' : 'nav-link'}>Kampus</Link>
                 </li>
                 <li>
-                    <NavLink to="/berita" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Berita</NavLink>
+                    <Link href="/berita" className={pathname === '/berita' ? 'nav-link active' : 'nav-link'}>Berita</Link>
                 </li>
                 <li>
-                    <NavLink to="/tentang-kami" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Tentang Kami</NavLink>
+                    <Link href="/tentang-kami" className={pathname === '/tentang-kami' ? 'nav-link active' : 'nav-link'}>Tentang Kami</Link>
                 </li>
                 <li>
-                    <NavLink to="/karier" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Karier</NavLink>
+                    <Link href="/karier" className={pathname === '/karier' ? 'nav-link active' : 'nav-link'}>Karier</Link>
                 </li>
             </ul>
 
             <div className="Nav2" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <Link to="/konsultasi" className="a_start" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <Link href="/konsultasi" className="a_start" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <Calendar size={14} className="calendar-icon" />
                     <h4>Konsultasi Gratis</h4>
                 </Link>

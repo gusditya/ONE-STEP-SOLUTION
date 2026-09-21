@@ -1,7 +1,10 @@
+"use client"
+
 import './Footer.css';
-import LogoOSS from '../../../assets/Logo.png';
 import { MapPin, Phone, Mail } from "lucide-react";
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaTiktok, FaLinkedinIn, FaYoutube,} from "react-icons/fa6";
+
+const LogoOSS = '/assets/Logo.png';
 
 export default function Footer() {
     return (

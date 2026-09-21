@@ -1,3 +1,5 @@
+"use client"
+
 import "./video.css";
 import { motion } from "framer-motion";
 

@@ -1,12 +1,14 @@
+"use client"
+
 import "./CardPeople.css";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
-import Nadya from "../../../assets/people/nadya.png";
-import Astina from "../../../assets/people/astina.png";
-import Ayu from "../../../assets/people/ayu.png";
-import Jani from "../../../assets/people/jani.png";
-import Rafli from "../../../assets/people/rafli.png";
+const Nadya = '/assets/people/nadya.png';
+const Astina = '/assets/people/astina.png';
+const Ayu = '/assets/people/ayu.png';
+const Jani = '/assets/people/jani.png';
+const Rafli = '/assets/people/rafli.png';
 
 export default function Consultant() {
 

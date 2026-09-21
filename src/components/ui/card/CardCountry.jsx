@@ -1,22 +1,24 @@
+"use client"
+
 import { Check, ArrowRight } from "lucide-react";
 import "./CardCountry.css";
 import { motion } from "framer-motion";
 
-import coverAustralia from "@/assets/country/australia.png";
-import coverCanada from "@/assets/country/Canada.jpg";
-import coverJepang from "@/assets/country/jepang.jpg";
-import coverUK from "@/assets/country/UK.png";
-import coverNZ from "@/assets/country/NZ.jpg";
-import coverFinlandia from "@/assets/country/finlandia.jpg"
-import coverPrancis from "@/assets/country/prancis.jpg";
+const coverAustralia = '/assets/country/australia.png';
+const coverCanada = '/assets/country/Canada.jpg';
+const coverJepang = '/assets/country/jepang.jpg';
+const coverUK = '/assets/country/UK.png';
+const coverNZ = '/assets/country/NZ.jpg';
+const coverFinlandia = '/assets/country/finlandia.jpg';
+const coverPrancis = '/assets/country/prancis.jpg';
 
-import flagAustralia from "@/assets/country/australiaflag.png";
-import flagCanada from "@/assets/country/canadaflag.png";
-import flagJepang from "@/assets/country/jepangflag.jpg";
-import flagUK from "@/assets/country/UKflag.png";
-import flagNZ from "@/assets/country/NZflag.jpg";
-import flagFinlandia from "@/assets/country/finlandiaflag.jpg";
-import flagPrancis from "@/assets/country/prancisflag.jpg";
+const flagAustralia = '/assets/country/australiaflag.png';
+const flagCanada = '/assets/country/canadaflag.png';
+const flagJepang = '/assets/country/jepangflag.jpg';
+const flagUK = '/assets/country/UKflag.png';
+const flagNZ = '/assets/country/NZflag.jpg';
+const flagFinlandia = '/assets/country/finlandiaflag.jpg';
+const flagPrancis = '/assets/country/prancisflag.jpg';
 
 const daftarNegara = [
     {

@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+"use client"
+
+import { useState } from 'react';
 import './question.css';
-import Question from "../../../assets/picture/question.png";
 import { motion, AnimatePresence } from "framer-motion";
+
+const QuestionImg = '/assets/picture/question.png';
 
 const faqData = [
     {
@@ -94,7 +97,7 @@ const FaqSection = () => {
                         transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
                     >
                         <img
-                            src={Question}
+                            src={QuestionImg}
                             alt="Maskot FAQ"
                         />
                     </motion.div>

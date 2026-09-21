@@ -1,10 +1,12 @@
-import React from 'react'
+"use client"
+
 import Navbar from '@/components/layout/navbar/Navbar.jsx'
 import '@/pages/Event/event.css'
-function event() {
+
+function Event() {
     return (
         <Navbar className="NavbarEvent"/>
     )
 }
 
-export default event
+export default Event

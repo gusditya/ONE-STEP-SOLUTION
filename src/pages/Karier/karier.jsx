@@ -1,6 +1,6 @@
-import React from 'react'
+"use client"
 
-function karier() {
+function Karier() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function karier() {
     )
 }
 
-export default karier
+export default Karier

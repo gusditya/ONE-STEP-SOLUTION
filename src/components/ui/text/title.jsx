@@ -1,7 +1,10 @@
+"use client"
+
 import "./title.css";
 import { ArrowRight } from "lucide-react";
-import Toga from "../../../assets/toga.png";
 import { motion } from "framer-motion";
+
+const Toga = '/assets/toga.png';
 
 export default function title() {
     const containerVariants = {

@@ -1,6 +1,6 @@
-import React from 'react'
+"use client"
 
-function tentangkami() {
+function TentangKami() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function tentangkami() {
     )
 }
 
-export default tentangkami
+export default TentangKami

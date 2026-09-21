@@ -1,11 +1,14 @@
+"use client"
+
 import "./Card.css";
-import Pengalaman1 from "../../../assets/pengalaman/pengalaman1.png"
-import Pengalaman2 from "../../../assets/pengalaman/pengalaman2.png"
-import Pengalaman3 from "../../../assets/pengalaman/pengalaman3.png"
-import Pengalaman4 from "../../../assets/pengalaman/pengalaman4.png"
-import backgroundPeople from "../../../assets/background/background_people.png"
-import Rectangle from "../../../assets/background/Rectangle.png"
 import { motion } from "framer-motion";
+
+const Pengalaman1 = '/assets/pengalaman/pengalaman1.png';
+const Pengalaman2 = '/assets/pengalaman/pengalaman2.png';
+const Pengalaman3 = '/assets/pengalaman/pengalaman3.png';
+const Pengalaman4 = '/assets/pengalaman/pengalaman4.png';
+const backgroundPeople = '/assets/background/background_people.png';
+const Rectangle = '/assets/background/Rectangle.png';
 
 const pengalamanData = [
     {

@@ -1,6 +1,6 @@
-import React from 'react'
+"use client"
 
-function berita() {
+function Berita() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function berita() {
     )
 }
 
-export default berita
+export default Berita

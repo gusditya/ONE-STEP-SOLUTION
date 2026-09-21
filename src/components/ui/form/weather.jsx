@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+"use client"
+
+import { useState, useEffect } from 'react';
 
 export default function PelacakCuaca() {
     const [Cuaca, setCuaca] = useState(null);

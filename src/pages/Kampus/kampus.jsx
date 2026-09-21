@@ -1,6 +1,6 @@
-import React from 'react'
+"use client"
 
-function kampus() {
+function Kampus() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function kampus() {
     )
 }
 
-export default kampus
+export default Kampus

@@ -1,3 +1,5 @@
+"use client"
+
 import { MessageCircleMore, SearchCheck, FileText, FolderBookmark, Plane } from 'lucide-react';
 import "./Tatacara.css";
 import { motion } from "framer-motion";

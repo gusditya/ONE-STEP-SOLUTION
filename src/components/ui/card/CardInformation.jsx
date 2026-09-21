@@ -1,9 +1,12 @@
+"use client"
+
 import "./CardInformation.css";
-import Canada from "../../../assets/country/canadaflag.png";
-import UK from "../../../assets/country/UKflag.png";
-import Australia from "../../../assets/country/australiaflag.png";
-import Singapore from "../../../assets/country/singaporeflag.png";
 import { motion } from "framer-motion";
+
+const Canada = '/assets/country/canadaflag.png';
+const UK = '/assets/country/UKflag.png';
+const Australia = '/assets/country/australiaflag.png';
+const Singapore = '/assets/country/singaporeflag.png';
 
 export default function CardInformation() {
     const containerVariants = {

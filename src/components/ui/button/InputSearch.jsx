@@ -1,3 +1,5 @@
+"use client"
+
 import "./InputSearch.css";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";

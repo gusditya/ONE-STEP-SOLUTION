@@ -1,25 +1,28 @@
-import background from '@/assets/background/Worldmap.png'
+"use client"
+
 import "./Country.css";
-import amerika from '@/assets/country/amerikaflag.jpg'
-import australia from '@/assets/country/australiaflag.png'
-import belanda from '@/assets/country/belandaflag.jpg'
-import belgia from '@/assets/country/belgiaflag.jpg'
-import canada from '@/assets/country/canadaflag.png'
-import china from '@/assets/country/chinaflag.jpg'
-import denmark from '@/assets/country/denmarkflag.jpg'
-import finlandia from '@/assets/country/finlandiaflag.jpg'
-import italia from '@/assets/country/italiaflag.jpg'
-import jepang from '@/assets/country/jepangflag.jpg'
-import jerman from '@/assets/country/jermanflag.jpg'
-import korea from '@/assets/country/koreaflag.jpg'
-import malaysia from '@/assets/country/malaysiaflag.jpg'
-import prancis from '@/assets/country/prancisflag.jpg'
-import singapura from '@/assets/country/singaporeflag.png'
-import spanyol from '@/assets/country/spanyolflag.jpg'
-import swiss from '@/assets/country/swissflag.jpg'
-import thailand from '@/assets/country/thailandflag.jpg'
-import UK from '@/assets/country/UKflag.png'
-import Vietnam from '@/assets/country/vietnamflag.jpg'
+
+const background = '/assets/background/Worldmap.png';
+const amerika = '/assets/country/amerikaflag.jpg';
+const australia = '/assets/country/australiaflag.png';
+const belanda = '/assets/country/belandaflag.jpg';
+const belgia = '/assets/country/belgiaflag.jpg';
+const canada = '/assets/country/canadaflag.png';
+const china = '/assets/country/chinaflag.jpg';
+const denmark = '/assets/country/denmarkflag.jpg';
+const finlandia = '/assets/country/finlandiaflag.jpg';
+const italia = '/assets/country/italiaflag.jpg';
+const jepang = '/assets/country/jepangflag.jpg';
+const jerman = '/assets/country/jermanflag.jpg';
+const korea = '/assets/country/koreaflag.jpg';
+const malaysia = '/assets/country/malaysiaflag.jpg';
+const prancis = '/assets/country/prancisflag.jpg';
+const singapura = '/assets/country/singaporeflag.png';
+const spanyol = '/assets/country/spanyolflag.jpg';
+const swiss = '/assets/country/swissflag.jpg';
+const thailand = '/assets/country/thailandflag.jpg';
+const UK = '/assets/country/UKflag.png';
+const Vietnam = '/assets/country/vietnamflag.jpg';
 
 const DataCountry = [
     {
